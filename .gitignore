@@ -1,0 +1,32 @@
+# Gradle / Android build output
+.gradle/
+.kotlin/
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Berkas lokal mesin pengembang
+local.properties
+.idea/
+*.iml
+*.hprof
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
+
+# Log dan tangkapan layar sementara
+*.log
+ui.xml
+Cuplikan layar*.png
+
+# Editor
+.vscode/
+
+# Contoh laporan milik kelompok lain — tidak boleh dipublikasikan
+009_011_021_LAPORAN AKHIR KRIPTOGRAFI.docx
+
+# Catatan: folder dist/ sengaja TIDAK diabaikan karena berisi APK siap pasang
+# yang dipakai untuk penilaian.

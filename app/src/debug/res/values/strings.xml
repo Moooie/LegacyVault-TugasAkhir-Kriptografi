@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Menimpa app_name hanya pada build debug agar mudah dibedakan di launcher. -->
+<resources>
+    <string name="app_name">LegacyVault DEV</string>
+</resources>

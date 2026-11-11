@@ -1,0 +1,84 @@
+LegacyVault 1.0 — Brankas Wasiat Digital
+Tugas Akhir Kriptografi
+=============================================
+
+ADA DUA APLIKASI DI FOLDER INI
+  LegacyVault-1.0-release.apk   untuk penguji dan demo resmi   (9,5 MB)
+  LegacyVault-1.0-dev.apk       untuk anggota kelompok, ada mode simulasi (13,2 MB)
+
+Keduanya bisa dipasang bersamaan karena nama paketnya berbeda:
+  release : id.upnyk.legacyvault        nama di layar "LegacyVault"      ikon hijau
+  dev     : id.upnyk.legacyvault.dev    nama di layar "LegacyVault DEV"  ikon jingga
+
+Data keduanya terpisah: akun, catatan, dokumen, dan rantai blok tidak saling terlihat.
+
+
+PILIH YANG MANA
+  Butuh tombol "Gunakan dongle simulasi" atau "Lewati biometrik (debug)"?  -> pakai DEV
+  Ingin melihat aplikasi apa adanya tanpa jalan pintas?                   -> pakai RELEASE
+
+Build rilis tidak memiliki kedua tombol tersebut, karena keduanya hanya aktif pada
+build debug. Itulah bentuk aplikasi yang memenuhi kriteria "hanya dapat dihidupkan
+menggunakan dongle".
+
+
+SYARAT
+  - Android 8.0 (Oreo) atau lebih baru
+  - Ruang kosong +-30 MB per aplikasi
+  - Tidak perlu internet, tidak ada server, tidak ada sinkronisasi
+
+
+CARA INSTAL
+  1. Unduh APK ke HP (tekan tombol Unduh di Drive, jangan buka dari pratinjau).
+  2. Buka berkas dari aplikasi Files / Pengelola Berkas.
+  3. Android menampilkan peringatan "aplikasi tidak dikenal". Tekan Setelan,
+     aktifkan "Izinkan dari sumber ini", lalu kembali dan tekan Instal.
+  4. Jika Play Protect menanyakan, pilih "Instal saja".
+
+APK ini ditandatangani dengan kunci debug, bukan kunci Play Store, sehingga Android
+memberi peringatan. Peringatan itu normal untuk APK di luar Play Store.
+
+
+PENGGUNAAN PERTAMA (aplikasi RELEASE)
+  1. Layar gerbang menampilkan "Menunggu" dan media USB "TIDAK ADA".
+     Tanpa dongle fisik, aplikasi tidak dapat dilanjutkan. Ini memang tujuannya.
+  2. Colokkan card reader atau flashdisk lewat OTG, lalu pilih lokasi di dalamnya
+     sampai tanda tangan HMAC-SHA256 berstatus valid.
+  3. Lanjut ke biometrik, verifikasi sidik jari.
+  4. Daftarkan akun pertama ("Buat akun pertama"), lalu masuk.
+  5. Setelah brankas terbuka, lima modul dapat dipakai.
+
+PENGGUNAAN PERTAMA (aplikasi DEV)
+  1. Di layar gerbang, buka panel "Mode pengujian debug".
+  2. Tekan "Gunakan dongle simulasi" -> status berubah valid.
+  3. Tekan "Lanjut ke biometrik" -> tekan "Lewati biometrik (debug)".
+  4. Daftarkan akun, lalu masuk.
+
+
+CATATAN DATA
+  - Data tersimpan lokal di HP masing-masing. HP satu orang tidak melihat data HP lain.
+  - Mencopot aplikasi menghapus seluruh datanya (akun, wasiat, catatan, stego, blok).
+  - Tidak ada fitur lupa password. Password di-hash SHA-256 + salt dan tidak dapat
+    dikembalikan. Catat password Anda.
+
+
+KALAU INSTAL GAGAL
+  INSTALL_FAILED_UPDATE_INCOMPATIBLE
+      Versi LegacyVault lain dengan tanda tangan berbeda sudah terpasang. Copot dulu
+      aplikasi lamanya; data lamanya akan hilang.
+  Berkas tidak bisa dibuka
+      Unduh ulang, jangan dibuka langsung dari pratinjau Drive.
+  Ikon masih ikon lama setelah pembaruan
+      Cache launcher. Buka Setelan -> Aplikasi -> LegacyVault -> Paksa berhenti.
+
+
+TUJUH KRITERIA YANG DIBUKTIKAN
+  1. Gerbang dongle USB (mass storage + HMAC-SHA256) dan login biometrik Keystore
+  2. Login dengan hash SHA-256 + salt 16 byte dan sesi AES-128-CBC
+  3. Surat wasiat: Extended Vigenere (klasik) + AES-256-CBC (modern)
+  4. Dokumen warisan: stream cipher RC4 mandiri -> berkas .rc4vault
+  5. Catatan penting: 3DES mode ECB pada kolom basis data Room/SQLite
+  6. Galeri memori: steganografi LSB + PRNG seed, keluaran PNG, MSE/PSNR
+  7. Buku besar aset: blockchain SHA-256 + Proof-of-Work "000" + verifyChain
+
+Dokumen arsitektur lengkap ada di docs/ARSITEKTUR-LegacyVault.md pada repositori.

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Dongle boleh berupa card reader atau flashdisk apa pun, jadi filter tidak
+      mengunci vendor-id tertentu. Pemeriksaan mass storage dilakukan di runtime
+      oleh UsbDongleReceiver.
+    -->
+    <usb-device />
+</resources>

@@ -1,0 +1,8 @@
+# Normalisasi akhir baris agar repo konsisten di Windows/Linux/macOS.
+* text=auto eol=lf
+
+*.bat   text eol=crlf
+*.apk   binary
+*.jar   binary
+*.docx  binary
+*.png   binary

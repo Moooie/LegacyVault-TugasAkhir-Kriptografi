@@ -1,0 +1,2 @@
+036928d030a768819bd7648141ab2333bbb550e9d8c55b72d45daa66d3a9079f  LegacyVault-1.0-release.apk
+6e7dd2a1001d9ca82ddfb51811125d4ed9b80b8ee9dba9910659a2aac0ac4e6e  LegacyVault-1.0-dev.apk

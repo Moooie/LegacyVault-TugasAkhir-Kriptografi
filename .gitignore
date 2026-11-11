@@ -28,5 +28,9 @@ Cuplikan layar*.png
 # Contoh laporan milik kelompok lain — tidak boleh dipublikasikan
 009_011_021_LAPORAN AKHIR KRIPTOGRAFI.docx
 
-# Catatan: folder dist/ sengaja TIDAK diabaikan karena berisi APK siap pasang
-# yang dipakai untuk penilaian.
+# Catatan kerja pribadi, tidak diunggah ke repositori
+AGENTS.md
+Struktur Tree.txt
+
+# Catatan: APK siap pasang sengaja TIDAK diabaikan (berada di akar repo) agar
+# penguji dapat mengunduhnya langsung tanpa menelusuri folder.

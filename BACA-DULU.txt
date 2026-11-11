@@ -29,7 +29,8 @@ SYARAT
 
 
 CARA INSTAL
-  1. Unduh APK ke HP (tekan tombol Unduh di Drive, jangan buka dari pratinjau).
+  1. Unduh APK ke HP: buka halaman repositori di GitHub, klik nama berkasnya,
+     lalu tekan "Download raw file". Jangan pakai pratinjau GitHub.
   2. Buka berkas dari aplikasi Files / Pengelola Berkas.
   3. Android menampilkan peringatan "aplikasi tidak dikenal". Tekan Setelan,
      aktifkan "Izinkan dari sumber ini", lalu kembali dan tekan Instal.
@@ -67,7 +68,7 @@ KALAU INSTAL GAGAL
       Versi LegacyVault lain dengan tanda tangan berbeda sudah terpasang. Copot dulu
       aplikasi lamanya; data lamanya akan hilang.
   Berkas tidak bisa dibuka
-      Unduh ulang, jangan dibuka langsung dari pratinjau Drive.
+      Unduh ulang lewat tombol "Download raw file", jangan dibuka dari pratinjau GitHub.
   Ikon masih ikon lama setelah pembaruan
       Cache launcher. Buka Setelan -> Aplikasi -> LegacyVault -> Paksa berhenti.
 

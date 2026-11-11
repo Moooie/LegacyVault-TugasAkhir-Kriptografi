@@ -71,7 +71,7 @@ app/src/main/java/id/upnyk/legacyvault/
   core/session/    token sesi AES-CBC di SharedPreferences
   core/database/   Room: 6 entitas + DAO
   ui/              ViewModel, navigasi, layar per modul, panel Crypto Inspector
-app/src/test/      10 pengujian unit algoritma (CryptoSelfCheckTest)
+app/src/test/      9 pengujian unit algoritma (CryptoSelfCheckTest)
 docs/              dokumen arsitektur untuk penyusunan laporan
 tools/             generator dokumen laporan (python-docx)
 dist/              APK siap pasang + petunjuk + checksum
@@ -123,7 +123,7 @@ Diuji pada perangkat fisik (Poco F5, Android, layar 1080 × 2400).
 | Nonce blok aset #1 | 867 |
 | Difficulty Proof-of-Work | 3 nol (`000`) |
 | Berkas uji RC4 | 663.923 byte, checksum SHA-256 terverifikasi |
-| Pengujian unit | 10, seluruhnya lulus |
+| Pengujian unit | 9, seluruhnya lulus |
 
 ---
 

@@ -115,7 +115,7 @@ ui/
   screens/stegano/                  Modul 4 galeri memori
   screens/blockchain/               Modul 5 buku besar aset
   theme/                            Color.kt, Type.kt, Theme.kt
-app/src/test/java/id/upnyk/legacyvault/CryptoSelfCheckTest.kt   10 pengujian unit
+app/src/test/java/id/upnyk/legacyvault/CryptoSelfCheckTest.kt   9 pengujian unit
 ```
 
 Pemisahan lapisan: `ui` tidak pernah memanggil `javax.crypto` langsung; seluruh operasi

@@ -4,34 +4,6 @@ Dokumen ini dipakai sebagai bahan penyusunan **Laporan Tugas Akhir Kriptografi**
 nama berkas, nama fungsi, dan pesan yang tertulis di sini diambil dari kode sumber yang benar-benar
 dibangun dan diuji, bukan dari rencana.
 
----
-
-## 0. Panduan penyusunan laporan
-
-Bagian ini berisi aturan penulisan laporan supaya isinya tetap sesuai dengan kode yang ada.
-
-1. **Data pengujian** yang boleh dipakai hanya yang ada di Bagian 12. Kalau sebuah data belum ada,
-   tulis `[BELUM DIUJI]`, jangan diisi sendiri.
-2. **Daftar pustaka** yang boleh dipakai ada di Bagian 16.
-3. **Struktur** mengikuti contoh laporan kampus: Sampul, DAFTAR ISI, BAB I
-   PENDAHULUAN, BAB II DASAR TEORI, BAB III PERANCANGAN DAN ARSITEKTUR SISTEM,
-   BAB IV HASIL IMPLEMENTASI DAN PENGUJIAN, BAB V PENUTUP, DAFTAR PUSTAKA.
-4. **Format**: kertas A4; margin atas 3 cm, bawah 3 cm, kiri 2,5 cm, kanan 2,5 cm;
-   isi 12 pt, spasi 1,5, rata kanan-kiri; judul BAB 14 pt bold rata tengah; subbab bold dengan
-   nomor manual (`3.1`, `3.2`, …); keterangan gambar dan tabel 10 pt italic rata tengah;
-   penomoran gambar `Gambar 4.1`, tabel `Tabel 3.1` per bab.
-5. **Gaya bahasa**: Indonesia baku, kalimat lengkap, tanpa kata ganti orang pertama, tanpa
-   hiperbola. Sebut algoritma dengan nama tepat (`AES-256-CBC`, `DESede/ECB/PKCS5Padding`,
-   `Extended Vigenère`, `RC4`, `SHA-256`).
-6. Setiap subbab BAB II perlu memuat rumus dalam bentuk persamaan dan satu paragraf "Keterangan"
-   yang menjelaskan setiap simbol pada rumus.
-7. Setiap subbab BAB III perlu menjelaskan mengapa algoritma itu dipilih untuk konteks tersebut,
-   bukan hanya cara kerjanya.
-8. BAB IV memuat tabel pengujian yang isinya diambil dari Bagian 12 dan 13, ditambah minimal tujuh
-   gambar tangkapan layar (Bagian 14).
-9. Bagian 15 muncul sebagai subbab "Analisis Keamanan dan Batasan". Jangan dihapus, karena penguji
-   hampir selalu menanyakan batas keamanan.
-10. Panjang wajar 20–30 halaman sebelum lampiran.
 
 ---
 
